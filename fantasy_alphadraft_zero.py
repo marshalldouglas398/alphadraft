@@ -83,7 +83,7 @@ class AlphaDraftConfig:
     seed: int = RANDOM_SEED
     device: str = "auto"
     checkpoint: Path | None = None
-    # v4 improvements
+    # Training improvements
     reward_rank_weight: float = 0.5
     reward_point_weight: float = 0.5
     use_lr_schedule: bool = True
@@ -1600,7 +1600,7 @@ def parse_args() -> AlphaDraftConfig:
     parser.add_argument("--max-players-per-season", type=int, default=220)
     parser.add_argument("--shortlist-size", type=int, default=48)
     parser.add_argument("--device", type=str, default="auto")
-    parser.add_argument("--checkpoint", type=Path, default=None, help="Path to v1 checkpoint for warm-start")
+    parser.add_argument("--checkpoint", type=Path, default=None, help="Path to checkpoint for warm-start")
     parser.add_argument("--validation-team-count", type=int, default=0, help="Teams per validation season (0=all)")
     parser.add_argument("--validation-frequency", type=int, default=1, help="Validate every N iterations")
     parser.add_argument("--replay-buffer-size", type=int, default=25000)

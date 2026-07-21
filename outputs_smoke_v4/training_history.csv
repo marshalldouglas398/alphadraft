@@ -1,2 +1,0 @@
-iteration,replay_size,examples_added,train_policy_loss,train_value_loss,train_entropy,self_play_reward_mean,self_play_points_mean,validation_reward_mean,validation_points_mean,validation_rank_mean
-1,15,15,,,,-0.6096133589744568,1415.7465579154236,0.028832916170358658,1605.9908410418022,4.3125
