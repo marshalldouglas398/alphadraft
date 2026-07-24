@@ -42,6 +42,10 @@ else:
     TORCH_IMPORT_ERROR = None
 
 
+# Counter
+# Number: 0
+
+
 @dataclass
 class AlphaDraftConfig:
     csv_path: Path = Path("fantasy_data.csv")
